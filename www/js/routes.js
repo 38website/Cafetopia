@@ -37,7 +37,11 @@ angular.module('app.routes', [])
     })
 
 
-
+    .state('find0', {
+      url: '/find0',
+      templateUrl: 'templates/find0.html',
+      controller: 'find0Ctrl'
+    })
 
 
     .state('find', {

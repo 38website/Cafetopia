@@ -1,42 +1,46 @@
 <ion-view style="" title="Home">
-  <div class="bar bar-subheader" style="background-color: transparent; border:0px;">
+  <div class="bar bar-subheader" style="background-color: #777777; border:0px;">
     <div class="button-bar">
       <a style="" class="button button-balanced icon-left ion-android-add-circle" href="#/inviteA">Create a Party</a>
-      <a class="button">Second</a>
-      <a class="button">Third</a>
+      <a style="" class="button icon-left ion-person-stalker" href="#/done">My Parties</a>
+      <a style="" class="button button-positive icon-left ion-coffee" href="#/already">I'm There</a>
     </div>
   </div>
     <ion-content class="has-header has-subheader" style="background-image: url(../img/bg.jpg);" overflow-scroll="true" padding="'true'">
         <form style="" class="list">
+          <a href="#/find0">
             <label style="" class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
                 <input placeholder="" type="search">
             </label>
+          </a>
         </form>
 
-        <div style="width: 300px; height: 5px;" class="spacer"></div>
-
-        <div style="width: 300px; height: 5px;" class="spacer"></div>
-
-        <div style="width: 300px; height: 5px;" class="spacer"></div>
-        <div style="" class="list card">
-            <div class="item item-divider">Recommended for You</div>
-            <div class="item item-body">
+        <div style="" class="list card" style="background-color: transparent; border:0px;">
+          <div class="item item-divider item-assertive">Recommended for You</div>
+          <div class="item item-body">
+            <div class="card">
+              <a href="#/cafe1" style="display: inline-block; width: 100%; height: auto;">
+                <img src="img/1.jpg" height="auto" width="100%">
+              </a>
+              <div class="item item-divider item-assertive">Cafe X</div>
+            </div>
+            <div class="row">
+              <div class="col">
                 <div class="card">
-                    <a href="#/cafe1" style="display: inline-block; width: 100%; height: auto;">
-                      <img src="img/1.jpg" height="auto" width="100%">
-                  </a>
-                  <div class="item item-divider item-assertive">Cafe X</div>
+                  <img style="width: 100%; height: auto;" src="img/2.jpg" height="auto" width="100%">
+                  <div class="item item-divider item-assertive">Cafe #2</div>
                 </div>
-                <div class="card">
-                <img style="width: 100%; height: auto;" src="img/2.jpg" height="auto" width="100%">
-                <div class="item item-divider item-assertive">Cafe #2</div>
-                </div>
+              </div>
+              <div class="col">
                 <div class="card">
                 <img style="width: 100%; height: auto;" src="img/3.jpg" height="auto" width="100%">
                 <div class="item item-divider item-assertive">Alpha Cafe</div>
               </div>
             </div>
+          </div>
         </div>
+      </div>
+
     </ion-content>
 </ion-view>
