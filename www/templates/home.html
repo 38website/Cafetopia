@@ -1,42 +1,41 @@
 <ion-view style="" title="Home">
-    <ion-content class="has-header" overflow-scroll="true" padding="'true'">
+  <div class="bar bar-subheader" style="background-color: transparent; border:0px;">
+    <div class="button-bar">
+      <a style="" class="button button-balanced icon-left ion-android-add-circle" href="#/inviteA">Create a Party</a>
+      <a class="button">Second</a>
+      <a class="button">Third</a>
+    </div>
+  </div>
+    <ion-content class="has-header has-subheader" style="background-image: url(../img/bg.jpg);" overflow-scroll="true" padding="'true'">
         <form style="" class="list">
             <label style="" class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
                 <input placeholder="" type="search">
             </label>
         </form>
-        <a style="" class="button button-balanced button-block  icon-right ion-android-add-circle" href="#/inviteA">Create a Party</a>
+
+        <div style="width: 300px; height: 5px;" class="spacer"></div>
+
+        <div style="width: 300px; height: 5px;" class="spacer"></div>
+
+        <div style="width: 300px; height: 5px;" class="spacer"></div>
         <div style="" class="list card">
-            <div class="item item-divider">Find a Cafe</div>
+            <div class="item item-divider">Recommended for You</div>
             <div class="item item-body">
-                <form style="" class="list">
-                    <label style="" class="item item-input">
-                        <span class="input-label">Date:</span>
-                        <input placeholder="e.g. 16/02/1993" type="date">
-                    </label>
-                    <label style="" class="item item-input">
-                        <span class="input-label">Time:</span>
-                        <input placeholder="e.g. 1100-1300" type="text">
-                    </label>
-                    <label style="" class="item item-input">
-                        <span class="input-label">Pax:</span>
-                        <input placeholder="e.g. 6-8" type="text">
-                    </label>
-                </form>
-                <a style="" class="button button-assertive button-block  icon-right ion-search" href="#/list">Find!</a>
-                <a style="" class="button button-dark button-block  icon-right ion-ios-arrow-forward" href="#/already">I'm already there!</a>
-            </div>
-        </div>
-        <div style="width: 300px; height: 28px;" class="spacer"></div>
-        <div style="" class="list card">
-            <div class="item item-divider">Recommended</div>
-            <div class="item item-body">
-                <a href="#/cafe1" style="display: inline-block; width: 100%; height: auto;">
-                    <img src="img/1.jpg" height="auto" width="100%">
-                </a>
+                <div class="card">
+                    <a href="#/cafe1" style="display: inline-block; width: 100%; height: auto;">
+                      <img src="img/1.jpg" height="auto" width="100%">
+                  </a>
+                  <div class="item item-divider item-assertive">Cafe X</div>
+                </div>
+                <div class="card">
                 <img style="width: 100%; height: auto;" src="img/2.jpg" height="auto" width="100%">
+                <div class="item item-divider item-assertive">Cafe #2</div>
+                </div>
+                <div class="card">
                 <img style="width: 100%; height: auto;" src="img/3.jpg" height="auto" width="100%">
+                <div class="item item-divider item-assertive">Alpha Cafe</div>
+              </div>
             </div>
         </div>
     </ion-content>
