@@ -1,5 +1,5 @@
 <ion-view style="" title="Already there?">
-    <ion-content class="has-header" overflow-scroll="true" padding="'true'">
+    <ion-content class="has-header" style="background-image: url(../img/bg.jpg);" overflow-scroll="true" padding="'true'">
         <form style="" class="list">
             <label style="" class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
@@ -7,7 +7,7 @@
             </label>
         </form>
         <div style="" class="list card">
-            <div class="item item-divider">Near You</div>
+            <div class="item item-divider icon ion-ios-location"> Near You</div>
             <div class="item item-body">
                 <ion-list style="">
                     <ion-item style="" href="#/cafe1B" class="item-thumbnail-left">
@@ -17,6 +17,9 @@
                     </ion-item>
                 </ion-list>
             </div>
+        </div>
+        <div class="item item-body">
+            <button style="" class="button button-stable button-block button-assertive icon-right ion-camera">Scan QR Code</button>
         </div>
     </ion-content>
 </ion-view>

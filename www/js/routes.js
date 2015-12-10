@@ -160,7 +160,11 @@ angular.module('app.routes', [])
       controller: 'party3Ctrl'
     })
 
-
+    .state('party4', {
+      url: '/party4',
+      templateUrl: 'templates/party4.html',
+      controller: 'party4Ctrl'
+    })
 
 
 

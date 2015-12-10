@@ -64,6 +64,10 @@ angular.module('app.controllers', [])
 
 })
 
+.controller('party4Ctrl', function($scope) {
+
+})
+
 .controller('menuCtrl', function($scope) {
 
 })
