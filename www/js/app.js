@@ -20,3 +20,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     }
   });
 })
+
+.config(function($ionicConfigProvider) {
+  $ionicConfigProvider.views.maxCache(5);
+
+  $ionicConfigProvider.navBar.alignTitle('center');
+});
