@@ -6,35 +6,59 @@
                 <input placeholder="" type="search">
             </label>
         </form>
-        <div style="" class="list card">
-            <div class="item item-divider">Find a Cafe</div>
-            <div class="item item-body">
-                <form style="" class="list">
-                    <label style="" class="item item-input">
-                        <span class="input-label">Date:</span>
-                        <input placeholder="e.g. 16/02/1993" type="date">
-                    </label>
-                    <label style="" class="item item-input">
-                        <span class="input-label">Time:</span>
-                        <input placeholder="e.g. 1100-1300" type="text">
-                    </label>
-                    <label style="" class="item item-input">
-                        <span class="input-label">Pax:</span>
-                        <input placeholder="e.g. 6-8" type="text">
-                    </label>
-                </form>
-                <a style="" class="button button-assertive button-block  icon-right ion-search" href="#/listA">Find!</a>
-            </div>
+
+        <div class="row list card">
+          <div class="col card">
+            <div class="item item-divider item-assertive"><strong>Best for:</strong></div>
+            <ion-list>
+              <ion-checkbox ng-model="filter.drinks">Drinks</ion-checkbox>
+              <ion-checkbox ng-model="filter.desserts">Desserts</ion-checkbox>
+              <ion-checkbox ng-model="filter.mains">Mains</ion-checkbox>
+            </ion-list>
+          </div>
+          <div class="col card">
+            <div class="item item-divider item-assertive"><strong>Nearby:</strong></div>
+            <ion-list>
+              <ion-checkbox ng-model="filter.town">Town</ion-checkbox>
+              <ion-checkbox ng-model="filter.east">East</ion-checkbox>
+              <ion-checkbox ng-model="filter.west">West</ion-checkbox>
+              <ion-checkbox ng-model="filter.north">North</ion-checkbox>
+            </ion-list>
+          </div>
+          <div class="col card">
+            <div class="item item-divider item-assertive"><strong>Sort by:</strong></div>
+            <ion-list>
+              <ion-radio ng-model="choice" ng-value="'A'">Popularity</ion-radio>
+              <ion-radio ng-model="choice" ng-value="'B'">Recent</ion-radio>
+              <ion-radio ng-model="choice" ng-value="'C'">Price</ion-radio>
+            </ion-list>
+          </div>
         </div>
-        <div style="" class="list card">
-            <div class="item item-divider">Recommended</div>
-            <div class="item item-body">
-                <a href="#/cafe1" style="display: inline-block; width: 100%; height: auto;">
-                    <img src="img/1.jpg" height="auto" width="100%">
-                </a>
-                <img style="width: 100%; height: auto;" src="img/2.jpg" height="auto" width="100%">
+
+        <div style="" class="list card" style="background-color: transparent; border:0px;">
+          <div class="item item-divider item-assertive"><strong>Recommended for You</strong></div>
+          <div class="item item-body">
+            <div class="card">
+              <a href="#/cafe1" style="display: inline-block; width: 100%; height: auto;">
+                <img src="img/1.jpg" height="auto" width="100%">
+              </a>
+              <div class="item item-divider item-assertive">Cafe X</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img style="width: 100%; height: auto;" src="img/2.jpg" height="auto" width="100%">
+                  <div class="item item-divider item-assertive">Cafe #2</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
                 <img style="width: 100%; height: auto;" src="img/3.jpg" height="auto" width="100%">
+                <div class="item item-divider item-assertive">Alpha Cafe</div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </ion-content>
 </ion-view>
