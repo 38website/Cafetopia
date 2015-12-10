@@ -6,33 +6,42 @@
                 <input placeholder="" type="search">
             </label>
         </form>
-
-        <div class="row list card">
-          <div class="col card">
-            <div class="item item-divider item-assertive"><strong>Best for:</strong></div>
+        <div class="list card" style="background-color: gray;">
+        <div class="row">
+          <div class="col">
+            <div class="item item-divider item-dark"><strong>Best for:</strong></div>
             <ion-list>
+              <ion-checkbox ng-model="filter.all1">All</ion-checkbox>
               <ion-checkbox ng-model="filter.drinks">Drinks</ion-checkbox>
               <ion-checkbox ng-model="filter.desserts">Desserts</ion-checkbox>
               <ion-checkbox ng-model="filter.mains">Mains</ion-checkbox>
+              <ion-checkbox ng-model="filter.ambience">Ambience</ion-checkbox>
             </ion-list>
           </div>
-          <div class="col card">
-            <div class="item item-divider item-assertive"><strong>Nearby:</strong></div>
+          <div class="col">
+            <div class="item item-divider item-dark"><strong>Nearby:</strong></div>
             <ion-list>
+              <ion-checkbox ng-model="filter.all2">All</ion-checkbox>
               <ion-checkbox ng-model="filter.town">Town</ion-checkbox>
               <ion-checkbox ng-model="filter.east">East</ion-checkbox>
               <ion-checkbox ng-model="filter.west">West</ion-checkbox>
               <ion-checkbox ng-model="filter.north">North</ion-checkbox>
             </ion-list>
           </div>
-          <div class="col card">
-            <div class="item item-divider item-assertive"><strong>Sort by:</strong></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="item item-divider item-dark"><strong>Sort by:</strong></div>
             <ion-list>
+              <ion-radio ng-model="choice" ng-value="'Z'">None</ion-radio>
               <ion-radio ng-model="choice" ng-value="'A'">Popularity</ion-radio>
               <ion-radio ng-model="choice" ng-value="'B'">Recent</ion-radio>
               <ion-radio ng-model="choice" ng-value="'C'">Price</ion-radio>
             </ion-list>
+            <a style="" class="button button-assertive button-block icon-right ion-search" href="#/listA">Find a Cafe!</a>
           </div>
+          </div>
+
         </div>
 
         <div style="" class="list card" style="background-color: transparent; border:0px;">

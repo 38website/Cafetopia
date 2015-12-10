@@ -1,17 +1,30 @@
 <ion-view style="" title="Food">
-    <ion-content class="has-header" overflow-scroll="true" padding="'true'">
-        <div style="line-height: 250px; background-color: rgb(255, 255, 255); border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; width: 100%; height: 100px;">
-            <i style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" class="icon ion-image"></i>
-        </div>
-        <div style="width: 283.2px; height: 44px;" class="spacer"></div>
-        <div style="line-height: 250px; background-color: rgb(255, 255, 255); border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; width: 100%; height: 100px;">
-            <i style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" class="icon ion-image"></i>
-        </div>
-        <div style="width: 283.2px; height: 44px;" class="spacer"></div>
-        <div style="line-height: 250px; background-color: rgb(255, 255, 255); border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; width: 100%; height: 100px;">
-            <i style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" class="icon ion-image"></i>
-        </div>
-        <a style="" class="button button-dark button-block  icon-left ion-ios-arrow-back" href="#/menu">Go back</a>
-        <a style="" class="button button-assertive button-block  icon-left ion-ios-arrow-back" href="#/done">I'm done!</a>
+    <ion-content class="has-header" style="background-color: #FFFFE0;" overflow-scroll="true" padding="'true'">
+      <form style="" class="list">
+          <label style="" class="item item-input">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input placeholder="" type="search">
+          </label>
+      </form>
+                <div class="card" style="background-color:transparent;">
+
+                    <img src="img/A3.jpg" height="auto" width="100%">
+
+                  <ion-checkbox class="item-dark"><div class="item item-divider item-dark">Sirloin Steak $12.90</div></ion-checkbox>
+                </div>
+
+
+                    <div class="card" style="background-color:transparent; display: inline-block; width: 100%; height: auto;">
+                      <img src="img/A1.jpg" height="auto" width="100%">
+                      <ion-checkbox class="item-assertive"><div class="item item-divider item-assertive">Beef Burger $9.90</div></ion-checkbox>
+                    </div>
+
+                    <div class="card" style="background-color:transparent;" style="display: inline-block; width: 100%; height: auto;">
+                    <img src="img/A2.jpg" height="auto" width="100%">
+                    <ion-checkbox class="item-balanced"><div class="item item-divider item-balanced">Seafood Pasta $9.90</div></ion-checkbox>
+                </div>
+
+
+              <a style="" class="button button-dark button-block  icon-right ion-ios-arrow-right" href="#/done">I'm done!</a>
     </ion-content>
 </ion-view>
