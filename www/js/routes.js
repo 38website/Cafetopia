@@ -157,7 +157,7 @@ angular.module('app.routes', [])
     .state('party3', {
       url: '/done',
       templateUrl: 'templates/party3.html',
-      controller: 'party3Ctrl'
+      controller: 'payLahCtrl'
     })
 
     .state('party4', {
